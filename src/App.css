@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+.body{
+  
+  justify-content: center;
+  display: flex;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.head{
+  margin-left: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.layout{
+  margin:50px;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 1200px;
+  min-width: 600px;
+  height: 700px;
   display: flex;
   flex-direction: column;
+  /* background-color: #05d686; */
+  
+}
+.tag{
+  background-color: #e5e5e5;
+  border-radius: 10px;
+ justify-content: center;
+ padding-bottom:10px;
+ /* border-bottom: 1px solid black; */
+}
+.inputTitle, .inputContent{
+  margin-left: 20px;
+  padding:6px;
+  border-radius: 13px;
+  border:2px solid  #05d686;
+}
+
+/* To-do List */
+.TodoListLayout{
+display: flex;
+
+}
+.TodoList{
+border:3.5px solid #05d686;
+border-radius: 13px;
+padding:20px;
+margin-left: 25px;
+}
+
+.addButton{
+  font-weight: bold;
+  font-size: 15px;
+  margin:0 20px 0 100px;
+  float:right;
+  border:3px solid #05d686;
+  border-radius: 13px;
+  padding:4px;
+  padding-right:40px;
+  padding-left:40px;
+  background-color: white;
+  cursor:pointer;
+
+}
+
+.TodoTitle{
+  font-size: 25px;
+  font-weight: bold;
+  padding:5px 5px 15px 0;
+
+}
+.TodoContent{
+  font-size: 18px;
+  padding:5px 5px 15px 0;
+}
+
+
+
+.deleteButton{
+  background-color: white;
+  border: none;
+  padding:10px 40px ;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-right: 15px;
+  border-radius: 10px;
+  border:3px solid #f05650; 
+  font-weight: bold;
+  cursor: pointer;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.completeButton{
+  background-color: white;
+  border: none;
+  padding:10px 40px ;
+  align-items: center;
+  margin-right: 15px;
+  border-radius: 10px;
+  border:3px solid #248027;
+  font-weight: bold;
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cancelButton{
+  background-color: white;
+  border: none;
+  padding:10px 40px ;
+  align-items: center;
+  margin-right: 15px;
+  border-radius: 10px;
+  border:3px solid #757575;
+  font-weight: bold;
+  cursor: pointer;
+}
+.inputTag{
+  margin-left: 10px;
+  font-weight: bold;
 }
