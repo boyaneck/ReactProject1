@@ -44,6 +44,7 @@ function App() {
   return (
     <div className="body">
       <div className="layout">
+        {/* input.jsx */}
         <Input addList={addList} addContent={addContent} addTitle={addTitle} title={title} content={content}/>
         
          {/* working.jsx */}
