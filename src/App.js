@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./App.css";
 import Done from "./components/DoneList"
 import Working from "./components/WorkingList"
+import Input from "components/input";
 
 function App() {
   const [list, setList] = useState([{id:0,title:'',content:'',isDone: false}]);
@@ -43,12 +44,7 @@ function App() {
   return (
     <div className="body">
       <div className="layout">
-        <div className="tag">
-          <h1 className="head">나의 To-do List!</h1>
-          <span className="inputTag">제목</span> <input className="inputTitle" value={title} onChange={addTitle} />
-          <span className="inputTag"> 내용</span><input className="inputContent" value={content} onChange={addContent} />
-           <button className="addButton" onClick={addList}>  추가</button>
-        </div>
+        <Input addList={addList} addContent={addContent} addTitle={addTitle} title={title} content={content}/>
         
          {/* working.jsx */}
         <h1>Working!&#x261D;</h1>
